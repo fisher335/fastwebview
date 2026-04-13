@@ -1,12 +1,13 @@
 import os
 from contextlib import asynccontextmanager
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from starlette.responses import JSONResponse
 from starlette.staticfiles import StaticFiles
 
-import config
+from common import config
+from common.database import get_db
 from routers import wifi
 
 
@@ -52,5 +53,5 @@ if os.path.exists(static_dir):
     app.mount("/", StaticFiles(directory=static_dir, html=True), name="static")
 
 @app.get("/")
-def root():
+def root(db=Depends(get_db)):
     return {"message": "WiFi Scan & Jammer API"}
