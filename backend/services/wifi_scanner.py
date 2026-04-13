@@ -176,83 +176,6 @@ def get_mock_networks() -> List[WiFiNetwork]:
                 STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
             ]
         ),
-        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),
-        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),
-        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),
-        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),
-        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),
-        WiFiNetwork(
-            ssid="CafeFreeWiFi",
-            bssid="33:44:55:66:77:88",
-            channel=3,
-            signal_strength=-80,
-            encryption=EncryptionType.OPEN,
-            clients=[
-                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
-                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
-            ]
-        ),
-
     ]
     if random.randint(1, 10) > 5:
         aa.append(WiFiNetwork(
@@ -266,4 +189,16 @@ def get_mock_networks() -> List[WiFiNetwork]:
                 STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
             ]
         ))
+        aa.append(WiFiNetwork(
+            ssid="补充内容",
+            bssid="33:41:55:66:77:88",
+            channel=4,
+            signal_strength=-90,
+            encryption=EncryptionType.OPEN,
+            clients=[
+                STA(mac="BB:CC:DD:EE:FF:01", bssid="33:44:55:66:77:88", signal_strength=-70, packets=5678),
+                STA(mac="BB:CC:DD:EE:FF:02", bssid="33:44:55:66:77:88", signal_strength=-75, packets=3456),
+            ]
+        ))
+
     return aa
